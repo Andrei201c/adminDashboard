@@ -1,0 +1,287 @@
+:root {
+    --mainColor: linear-gradient(45deg,
+     rgba(190,240,245,1) 21%,
+      rgba(254,254,254,1) 45%,
+       rgba(202,242,242,1) 68%,
+     rgba(168,231,230,1) 96%);
+    --heightPages: 36vh;
+     --sideColor: linear-gradient(45deg,
+      rgba(106,161,226,1) 12%,
+      rgba(97,177,212,1) 41%,
+       rgba(57,187,241,1) 61%,
+        rgba(0,147,230,1) 89%);
+    --sideFontColor: rgb(20, 20, 20);
+    --fontSize: 2.5vh;
+    --upBarColor: linear-gradient(45deg,
+    rgba(179,213,217,1) 21%, 
+    rgba(216,231,230,1) 45%, 
+    rgba(170,226,227,1) 68%,
+    rgba(152,209,208,1) 96%);
+}
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 99vw;
+    height: 100%;
+    background: var(--mainColor);
+    display: flex;
+}
+
+
+.leftBar {
+    width:19vw;
+    height: 100vh;
+    background:  var(--sideColor);
+    position: fixed;
+    color:var(--sideFontColor);
+}
+
+.logo {
+    width: 20vw;
+    height: auto;
+    display: flex;
+    padding: 2vh;
+    text-align: center;
+    font-size: 2.8vh;
+}
+
+.icon {
+    width: 3vw;
+}
+
+.pages {
+    width: 16vw;
+    height: var(--heightPages);
+    margin: 3vh 2vw 3vh 2vw;
+    display: block;
+   
+}
+
+.support {
+    width: 16vw;
+    height: 20vh;
+    margin: auto;
+    display: block;
+    
+}
+
+.pagesRow:hover {
+    scale: 1.05;
+    transition: 0.3s;
+}
+
+.pagesRow {
+    width:  16vw;
+    height: 5vh;
+    font-size: 2.5vh;
+    padding: 0vh 1vw 0vh 0.5vw;
+    display: flex;
+    font-style: italic;
+}
+
+.icons {
+    width: 2.8vw;
+    height: 5vh;
+    padding: 0vh 1vw 0vh 0vh ;
+    margin: 0;
+}
+
+.secondContainer {
+    width: 80vw;
+    height: 100%;
+    margin: 0vh 0vw 0vh 19vw;
+}
+
+.upBar {
+    width: 80vw;
+    height:25vh;
+    background:var(--upBarColor);
+    display: block;
+}
+
+.stBar {
+    width: 80vw;
+    height: 12.5vh;
+    display: flex;
+}
+
+.searchIcons {
+    margin: 1vh 1vw 1vh 3vw;
+}
+
+.search {
+    width:45vw;
+    height: 3.5vh;
+    margin: 2vh 1vw 2vh 0vw;
+    border-radius: 2vh;
+    border:none;
+}
+
+.notify {
+    margin: 1vh;
+}
+
+.account {
+    width: 4vw;
+    height: 8vh;
+    margin: 1vh 0vw 1vh 7vw;
+}
+
+.accountName {
+    width: 12vw;
+    height:auto;
+    font-size: 4.5vh;
+    text-align: center;
+    margin: 2vh 0vw 3vh 0vw;
+}
+
+.sdBar {
+  width: 80vw;
+  height: 12.5vh;
+  display: flex;
+}
+
+.accountSdBar {
+    width: 4vw;
+    height: 12vh;
+    margin:  auto 2vw;
+}
+
+.accountNameSdBar {
+    margin: auto -1vw;
+    font-size: 4.5vh;
+}
+
+.buttonsDiv {
+    width: 25vw;
+    height: 10vh;
+    margin: auto 0vw auto 36vw ;
+    display: flex;
+}
+
+.buttons {
+    width: 7vw;
+    height: 7vh;
+    margin:auto;
+    border: none;
+    border-radius: 100vh;
+    box-shadow: 0.5vh 0.5vh 0.7vh rgb(102, 102, 102);
+    font-size: 3vh;
+    font-style: oblique;
+    background: var(--sideColor);
+    color:var(--sideFontColor);
+}
+
+.buttons:hover {
+    scale:1.1;
+    transition: 0.4s;
+}
+
+.main {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    background: var(--mainColor);
+    box-shadow: inset 0vh 0.4vh 0.7vh gray;
+}
+
+.leftMain {
+    width: 60vw;
+    height:auto;
+    margin: 2vh 0vw 2vh 2vw;
+}
+
+.projects {
+    width: 100%;
+    height: 5vh;
+    margin: 1vh 2vw 2vh 3vw;
+    font-size: 4vh;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    grid-template-rows: repeat(3, 60vh);
+}
+
+.card {
+    width: 28vw;
+    height: 54vh;
+    background: var(--upBarColor);
+    border-radius: 3vh;
+    border-left: 0.6vw solid rgb(1, 52, 254);
+    display: block;
+    font-size: var(--fontSize);
+    box-shadow: 0.5vh 0.5vh 0.8vh gray;
+}
+
+.card:hover {
+    scale: 1.01;
+    transition: 0.3s;
+}
+
+.descriptionImg {
+    width: 25vw;
+    height: 25vh;
+    border-radius: 1vh;
+    margin:2vh 1.2vw 
+
+}
+
+.description {
+    width: 26vw;
+    height: 4vw;
+    margin: 0vh 1vw 1vh 1vw;
+}
+
+.buttonImg {
+    width:2.5vw;
+    height: 7vh;
+}
+
+.buttonImg:hover {
+    scale:1.1;
+    transition: 0.4s;
+}
+
+.buttonsImg {
+    width: 6vw;
+    height:10vh;
+    margin: 3vh 1vw 2vh 21vw;
+}
+
+
+.rightMain {
+    width:18vw;
+    height: auto;
+    font-size: var(--fontSize);
+}
+
+.rightMain > h1 {
+    width: 16vw;
+    height: 10vh;
+    margin: 1vh 1vw 1vh 1vw
+}
+
+.rightMain > p {
+    width: 16vw;
+    height: auto;
+    text-align: center;
+    padding: 2vh 0vw 2vh 0vw;
+    border-radius: 2vh;
+    background: var(--upBarColor);
+    margin: 2vh 0vw 1vh 0vw;
+    font-size: var(--fontSize);
+    box-shadow: 0.4vh 0.2vh 0.7vh gray;
+}
+
+.rightMain > p:hover {
+    scale: 1.02;
+    transition: 0.4s;
+}
